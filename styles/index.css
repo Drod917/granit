@@ -1,10 +1,14 @@
 body {
   background-color: #1a1a1a;
   font-family: 'Roboto Slab';
+  margin: 0;
 }
 
 .container {
-  margin: 2.5em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 a {
@@ -112,7 +116,7 @@ header svg path {
   margin-top: -3em;
   margin-left: 0.3em;
   font-size: 3.7rem;
-  width: 50%;
+  width: 30%;
 }
 
 footer {
@@ -129,10 +133,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5em;
-  margin-bottom: -5em;
-  margin-left: -0.5em;
-  margin-right: -0.5em;
 }
 
 footer p {
@@ -230,14 +230,14 @@ footer .right {
     margin-top: 0em;
   }
   footer {
-    margin-top: 30em;
+    margin-top: 23em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0.5em auto;
   }
   .hero {
     display: -webkit-box;
@@ -255,7 +255,7 @@ footer .right {
     width: 20%;
   }
   footer {
-    margin-top: 72em;
+    margin-top: 50em;
   }
 }
 /*# sourceMappingURL=index.css.map */
