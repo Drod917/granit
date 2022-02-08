@@ -112,6 +112,10 @@ header svg path {
   width: 100%;
 }
 
+.gallery img:hover {
+  cursor: pointer;
+}
+
 .gallery img + img {
   margin-top: 2em;
 }
