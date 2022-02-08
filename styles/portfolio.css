@@ -1,0 +1,261 @@
+body {
+  background-color: #1a1a1a;
+  font-family: 'Roboto Slab';
+}
+
+.container {
+  margin: 2.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a .logo {
+  font-size: 1.3rem;
+}
+
+a .alt-brand {
+  color: #df1111;
+}
+
+.logo {
+  color: white;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #444444;
+  width: 45%;
+  z-index: 2;
+  text-transform: uppercase;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform .5 ease-in-out;
+  transition: -webkit-transform .5 ease-in-out;
+  transition: transform .5 ease-in-out;
+  transition: transform .5 ease-in-out, -webkit-transform .5 ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+nav ul a {
+  color: white;
+  padding: .75em 2em;
+  display: block;
+}
+
+nav ul a:hover {
+  background: grey;
+}
+
+nav .close {
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+header svg {
+  position: relative;
+  top: 0;
+  width: 2.3em;
+  stroke: white;
+  cursor: pointer;
+}
+
+header svg path {
+  fill: white;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery h1 {
+  color: white;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.gallery img + img {
+  margin-top: 2em;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 9vh;
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5em;
+  margin-bottom: -5em;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: white;
+}
+
+footer svg {
+  stroke: white;
+  width: 0.9em;
+}
+
+footer svg path {
+  fill: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a + a {
+  margin-left: 0.8em;
+}
+
+footer .right {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (min-width: 820px) {
+  .menu {
+    display: none;
+  }
+  header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav ul {
+    margin-top: 0em;
+  }
+  svg.close {
+    display: none;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  ul li a {
+    color: white;
+    font-size: .9rem;
+  }
+  ul li a:hover {
+    background: none;
+    text-decoration: underline;
+  }
+  .gallery h1 {
+    margin-bottom: 1em;
+  }
+  .gallery-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (50vw)[5];
+        grid-template-rows: repeat(5, 50vw);
+    gap: 4em;
+  }
+  .gallery-content img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .gallery-content img + img {
+    margin: 0em;
+  }
+  footer {
+    margin-top: 12.7em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .gallery {
+    margin-top: 2em;
+  }
+  .gallery h1 {
+    margin-bottom: 1em;
+  }
+  .gallery-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (50vw)[3];
+        grid-template-rows: repeat(3, 50vw);
+    gap: 3em;
+  }
+  .gallery-content img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  .gallery-content img + img {
+    margin: 0em;
+  }
+  footer {
+    margin-top: 10em;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */
