@@ -53,7 +53,7 @@ nav {
         }
     }
 
-    .close {
+    .close-menu {
         float: right;
         margin: 2em;
         width: 2.5em;
@@ -169,15 +169,15 @@ footer {
 
   
   /* The Close Button */
-  .close {
+  .close-modal {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+  .close-modal:hover,
+  .close-modal:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -205,7 +205,7 @@ footer {
         }
     }
 
-    svg.close {
+    svg.close-menu {
         display: none;
     }
 
