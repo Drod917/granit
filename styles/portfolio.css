@@ -1,10 +1,14 @@
 body {
   background-color: #1a1a1a;
   font-family: 'Roboto Slab';
+  margin: 0;
 }
 
 .container {
-  margin: 2.5em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 a {
@@ -135,9 +139,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5em;
-  margin-bottom: -5em;
-  margin-left: -0.5em;
-  margin-right: -0.5em;
 }
 
 footer p {
@@ -281,7 +282,7 @@ footer .right {
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0.5em auto;
   }
   .gallery {
     margin-top: 2em;
