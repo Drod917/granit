@@ -332,6 +332,7 @@ footer {
         .blurb-container {
             width: 30%;
             right: 0;
+            transform: translateX(-50%) translateY(90%);
         }
 
         #pic3 {
@@ -339,8 +340,8 @@ footer {
         }
 
         #pic4 {
-            width: 35%;
-            transform: translateX(-30%) translateY(40%);
+            width: 30%;
+            transform: translateX(-40%) translateY(40%);
         }
 
     }
