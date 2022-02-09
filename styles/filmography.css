@@ -8,6 +8,7 @@ iframe + iframe {
 }
 
 .video-gallery {
+  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
