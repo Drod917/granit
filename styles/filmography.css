@@ -81,6 +81,7 @@ footer {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: left;
+    margin-left: unset;
   }
 }
 
@@ -92,6 +93,9 @@ footer {
     margin-top: 3em;
     margin-bottom: 3em;
     border-left: 20em solid #bbb;
+  }
+  .video-gallery .video-item .video-description {
+    margin-left: 6em;
   }
 }
 /*# sourceMappingURL=filmography.css.map */
