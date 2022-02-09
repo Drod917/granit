@@ -289,21 +289,26 @@ footer {
             transform: translateY(20%);
         }
 
-        h1 {
-            width: 20%;
-            margin-bottom: 1em;
-            position: absolute;
+        .blurb-container {
+            position: absolute;            
+            width: 30%;
             right: 0;
-            transform: translateX(-110%) translateY(90%);
+            transform: translateX(-40%) translateY(50%);
         }
+        // h1 {
+        //     width: 20%;
+        //     margin-bottom: 1em;
+        //     position: absolute;
+        //     top: 5em;
+        //     right: 4em;
+        // }
 
-        p {
-            width: 20%;
-            margin-bottom: 1em;
-            position: absolute;
-            right: 0;
-            transform: translateX(-110%) translateY(90%);
-        }
+        // p {
+        //     width: 30%;
+        //     position: absolute;
+        //     top: 17rem;
+        //     right: 7em;    
+        // }
 
         img + img {
             margin: 0;
@@ -323,13 +328,16 @@ footer {
 
 
     .gallery-content {
-        h1  {
-            width: 20%;
-            position: absolute;
-            top: 60em;
-            right: 10em;
-            transform: translateX(0) translateY(0);
-          }
+        .blurb-container {
+            width: 30%;
+            right: 0;
+        }
+
+        #pic4 {
+            width: 30%;
+            transform: translateX(-50%) translateY(60%);
+        }
+
     }
 
     footer {
