@@ -3,8 +3,13 @@ iframe {
   height: 30vh;
 }
 
-.video-gallery {
-  margin-top: 2em;
+h1, p {
+  color: white;
+  line-height: 2rem;
+}
+
+.gallery-wrapper {
+  margin-top: 1.7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,20 +22,28 @@ iframe {
           align-items: center;
 }
 
-.video-gallery h1, .video-gallery p {
-  color: white;
-  line-height: 2rem;
+.video-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .video-gallery .video-item {
+  background-color: #262626;
+  padding: 2em;
   width: 100%;
+  border-radius: 1.3em;
 }
 
 .video-gallery .video-description {
-  background-color: #262626;
   margin-top: 1em;
-  padding: 0.5em 2em;
-  border-radius: 1.3em;
 }
 
 .video-gallery hr.solid {
@@ -45,29 +58,40 @@ footer {
 }
 
 @media only screen and (min-width: 820px) {
-  iframe {
-    height: 70vh;
+  .video-gallery hr.solid {
+    border-left: 10em solid #bbb;
   }
-  .video-description.flipped {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+  .video-gallery .video-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .video-gallery .video-item .video-description {
+    margin-left: 3em;
+  }
+  .video-gallery .video-item.flipped {
+        grid-template-areas: "left right";
+  }
+  .video-gallery .video-item.flipped .video-description {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: left;
   }
 }
 
-@media only screen and (min-width: 820px) {
-  iframe {
-    height: 100vh;
-  }
+@media only screen and (min-width: 1200px) {
   iframe + iframe {
     margin-top: 5em;
+  }
+  .video-gallery hr.solid {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-left: 20em solid #bbb;
   }
 }
 /*# sourceMappingURL=filmography.css.map */

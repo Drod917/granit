@@ -4,29 +4,33 @@ iframe {
     height: 30vh;
 }
 
+h1, p {
+    color: white;
+    line-height: 2rem;
+}
+
+.gallery-wrapper {
+    margin-top: 1.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .video-gallery {
-    margin-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    h1, p {
-        color: white;
-        line-height: 2rem;
-
-    }
-
 
     .video-item {
+        background-color: rgb(38, 38, 38);
+        padding: 2em;
         width: 100%;
+        border-radius: 1.3em;
     }
 
     .video-description {
-        background-color: rgb(38, 38, 38);
         margin-top: 1em;
-        padding: 0.5em 2em;
-        border-radius: 1.3em;
     }
 
     hr.solid {
@@ -44,24 +48,44 @@ footer {
 
 
 @media only screen and (min-width: 820px) {
-    iframe {
-        height: 70vh;
-    }
 
+    .video-gallery {
+        hr.solid {
+            border-left: 10em solid #bbb;
+        }
 
-    .video-description.flipped {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
+        .video-item {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            flex-direction: row;
+
+            .video-description {
+                margin-left: 3em;
+            }
+        }
+
+        .video-item.flipped {
+            grid-template-areas: "left right";
+
+            .video-description {
+                grid-area: left;
+            }
+        }
     }
+    
 }
 
-@media only screen and (min-width: 820px) {
-    iframe {
-        height: 100vh;
-    }
+@media only screen and (min-width: 1200px) {
 
     iframe + iframe {
         margin-top: 5em;
+    }
+
+    .video-gallery {
+        hr.solid {
+            margin-top: 3em;
+            margin-bottom: 3em;
+            border-left: 20em solid #bbb;
+        }
     }
 }
