@@ -324,6 +324,7 @@ footer {
 @media only screen and (min-width: 1200px) {
     .container {
         width: 1200px;
+        margin: 0.5em auto;
     }
 
 
@@ -333,9 +334,13 @@ footer {
             right: 0;
         }
 
+        #pic3 {
+            width: 40%;
+        }
+
         #pic4 {
-            width: 30%;
-            transform: translateX(-50%) translateY(60%);
+            width: 35%;
+            transform: translateX(-30%) translateY(40%);
         }
 
     }

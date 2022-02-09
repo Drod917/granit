@@ -337,15 +337,19 @@ footer .right {
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    margin: 0.5em auto;
   }
   .gallery-content .blurb-container {
     width: 30%;
     right: 0;
   }
+  .gallery-content #pic3 {
+    width: 40%;
+  }
   .gallery-content #pic4 {
-    width: 30%;
-    -webkit-transform: translateX(-50%) translateY(60%);
-            transform: translateX(-50%) translateY(60%);
+    width: 35%;
+    -webkit-transform: translateX(-30%) translateY(40%);
+            transform: translateX(-30%) translateY(40%);
   }
   footer {
     margin-top: 10em;
